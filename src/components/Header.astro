@@ -2,40 +2,37 @@
 
   <div class="container nav-container">
 
-    <a href="#" class="logo">
+    <a href="/" class="logo">
 
       <img src="/logocbiu.png" alt="Compassion Bridge Initiative Uganda Logo" />
 
       <div class="logo-text">
-
         <h2>Compassion Bridge Initiative Uganda</h2>
-
         <p>Restoring Dignity. Building Futures.</p>
-
       </div>
 
     </a>
 
     <nav class="navigation">
 
-      <a href="#">Home</a>
+      <a href="/">Home</a>
 
-      <a href="#about">About</a>
+      <a href="/#about">About</a>
 
-      <a href="#programs">Programmes</a>
+      <a href="/#programs">Programmes</a>
 
-      <a href="#impact">Impact</a>
+      <a href="/education-support">Education Support</a>
 
-      <a href="#leadership">Leadership</a>
+      <a href="/#impact">Impact</a>
 
-      <a href="#partners">Partners</a>
+      <a href="/#leadership">Leadership</a>
 
-      <a href="#contact">Contact</a>
+      <a href="/#partners">Partners</a>
 
-      <a href="#donate" class="donate-btn">
+      <a href="/#contact">Contact</a>
 
+      <a href="/#donate" class="donate-btn">
         Donate
-
       </a>
 
     </nav>
@@ -47,153 +44,246 @@
 <style>
 
 .header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:rgba(255,255,255,.97);
+  backdrop-filter:blur(12px);
+  box-shadow:0 4px 18px rgba(0,0,0,.08);
+  z-index:1000;
+}
 
-position:fixed;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-background:rgba(255,255,255,.97);
-
-backdrop-filter:blur(12px);
-
-box-shadow:0 4px 18px rgba(0,0,0,.08);
-
-z-index:1000;
-
+.container{
+  width:min(1200px,92%);
+  margin:auto;
 }
 
 .nav-container{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:16px 0;
-
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 0;
 }
 
 .logo{
-
-display:flex;
-
-align-items:center;
-
-gap:14px;
-
+  display:flex;
+  align-items:center;
+  gap:14px;
+  text-decoration:none;
 }
 
 .logo img{
-
-width:65px;
-
-height:65px;
-
-object-fit:contain;
-
+  width:65px;
+  height:65px;
+  object-fit:contain;
 }
 
 .logo-text h2{
-
-font-size:22px;
-
-color:var(--blue);
-
-font-weight:700;
-
-line-height:1.2;
-
+  font-size:22px;
+  color:#0B5E3C;
+  font-weight:700;
+  line-height:1.2;
+  margin:0;
 }
 
 .logo-text p{
-
-font-size:13px;
-
-color:var(--green);
-
-font-weight:600;
-
-margin-top:4px;
-
+  font-size:13px;
+  color:#1E88E5;
+  font-weight:600;
+  margin-top:4px;
 }
 
 .navigation{
-
-display:flex;
-
-align-items:center;
-
-gap:28px;
-
+  display:flex;
+  align-items:center;
+  gap:24px;
 }
 
 .navigation a{
-
-font-size:15px;
-
-font-weight:600;
-
-color:var(--dark);
-
-transition:.3s;
-
+  text-decoration:none;
+  font-size:15px;
+  font-weight:600;
+  color:#333;
+  transition:.3s;
 }
 
 .navigation a:hover{
-
-color:var(--green);
-
+  color:#0B5E3C;
 }
 
 .donate-btn{
-
-background:var(--gold);
-
-color:white !important;
-
-padding:12px 22px;
-
-border-radius:8px;
-
+  background:#F4B400;
+  color:white !important;
+  padding:12px 22px;
+  border-radius:8px;
 }
 
 .donate-btn:hover{
-
-background:#b8870f;
-
+  background:#c98d00;
 }
 
 @media(max-width:1050px){
 
 .nav-container{
-
-flex-direction:column;
-
-gap:20px;
-
+  flex-direction:column;
+  gap:20px;
 }
 
 .navigation{
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-gap:18px;
-
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:18px;
 }
 
 .logo{
+  flex-direction:column;
+  text-align:center;
+}
 
-flex-direction:column;
+}
 
-text-align:center;
+</style><header class="header">
 
+  <div class="container nav-container">
+
+    <a href="/" class="logo">
+
+      <img src="/logocbiu.png" alt="Compassion Bridge Initiative Uganda Logo" />
+
+      <div class="logo-text">
+        <h2>Compassion Bridge Initiative Uganda</h2>
+        <p>Restoring Dignity. Building Futures.</p>
+      </div>
+
+    </a>
+
+    <nav class="navigation">
+
+      <a href="/">Home</a>
+
+      <a href="/#about">About</a>
+
+      <a href="/#programs">Programmes</a>
+
+      <a href="/education-support">Education Support</a>
+
+      <a href="/#impact">Impact</a>
+
+      <a href="/#leadership">Leadership</a>
+
+      <a href="/#partners">Partners</a>
+
+      <a href="/#contact">Contact</a>
+
+      <a href="/#donate" class="donate-btn">
+        Donate
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+<style>
+
+.header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:rgba(255,255,255,.97);
+  backdrop-filter:blur(12px);
+  box-shadow:0 4px 18px rgba(0,0,0,.08);
+  z-index:1000;
+}
+
+.container{
+  width:min(1200px,92%);
+  margin:auto;
+}
+
+.nav-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 0;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  text-decoration:none;
+}
+
+.logo img{
+  width:65px;
+  height:65px;
+  object-fit:contain;
+}
+
+.logo-text h2{
+  font-size:22px;
+  color:#0B5E3C;
+  font-weight:700;
+  line-height:1.2;
+  margin:0;
+}
+
+.logo-text p{
+  font-size:13px;
+  color:#1E88E5;
+  font-weight:600;
+  margin-top:4px;
+}
+
+.navigation{
+  display:flex;
+  align-items:center;
+  gap:24px;
+}
+
+.navigation a{
+  text-decoration:none;
+  font-size:15px;
+  font-weight:600;
+  color:#333;
+  transition:.3s;
+}
+
+.navigation a:hover{
+  color:#0B5E3C;
+}
+
+.donate-btn{
+  background:#F4B400;
+  color:white !important;
+  padding:12px 22px;
+  border-radius:8px;
+}
+
+.donate-btn:hover{
+  background:#c98d00;
+}
+
+@media(max-width:1050px){
+
+.nav-container{
+  flex-direction:column;
+  gap:20px;
+}
+
+.navigation{
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:18px;
+}
+
+.logo{
+  flex-direction:column;
+  text-align:center;
 }
 
 }
