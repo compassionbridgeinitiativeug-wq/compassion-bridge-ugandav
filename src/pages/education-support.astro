@@ -1,0 +1,330 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Education Support | Compassion Bridge Initiative Uganda">
+
+<Header />
+
+<section class="hero">
+    <div class="overlay">
+        <h1>Giving Children the Opportunity to Learn</h1>
+
+        <p>
+            Every child deserves the opportunity to stay in school.
+            Through the generosity of compassionate individuals,
+            organisations and partners, Compassion Bridge Initiative Uganda
+            supports vulnerable children with school fees,
+            exercise books and other learning materials.
+        </p>
+    </div>
+</section>
+
+<section class="intro">
+
+<h2>Education Changes Lives</h2>
+
+<p>
+
+Education is one of the strongest tools for breaking the cycle of poverty.
+Many children in Kamuli District are unable to remain in school simply because
+their families cannot afford school fees or basic scholastic materials.
+
+Compassion Bridge Initiative Uganda works with generous partners to ensure
+that vulnerable children receive the support they need to continue their education.
+
+Every notebook, every school fee payment and every smile represents renewed hope
+for a brighter future.
+
+</p>
+
+</section>
+
+<section class="impact">
+
+<h2>Our Impact</h2>
+
+<div class="impact-grid">
+
+<div class="card">
+<h3>40+</h3>
+<p>Children Supported</p>
+</div>
+
+<div class="card">
+<h3>40+</h3>
+<p>Families Reached</p>
+</div>
+
+<div class="card">
+<h3>2</h3>
+<p>International Partners</p>
+</div>
+
+<div class="card">
+<h3>100%</h3>
+<p>Hope Restored</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="gallery">
+
+<h2>Education Support in Action</h2>
+
+<p class="gallery-text">
+
+These photographs capture moments of hope as vulnerable children receive
+exercise books, scholastic materials and educational support.
+
+</p>
+
+<div class="gallery-grid">
+
+<img src="/education1.jpg" alt="Education Support">
+
+<img src="/education2.jpg" alt="Education Support">
+
+<img src="/education3.jpg" alt="Education Support">
+
+<img src="/education4.jpg" alt="Education Support">
+
+<img src="/education5.jpg" alt="Education Support">
+
+<img src="/education6.jpg" alt="Education Support">
+
+<img src="/education7.jpg" alt="Education Support">
+
+<img src="/education8.jpg" alt="Education Support">
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>You Can Keep a Child in School</h2>
+
+<p>
+
+Your support provides school fees,
+exercise books,
+pens,
+school supplies
+and hope to vulnerable children.
+
+</p>
+
+<a href="/donate" class="donate-btn">Support a Child</a>
+
+</section>
+
+<Footer />
+
+</Layout>
+
+<style>
+
+.hero{
+
+height:70vh;
+
+background:url("/education1.jpg") center center/cover;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+.overlay{
+
+background:rgba(0,0,0,.55);
+
+padding:60px;
+
+color:white;
+
+text-align:center;
+
+max-width:900px;
+
+border-radius:12px;
+
+}
+
+.overlay h1{
+
+font-size:3rem;
+
+margin-bottom:20px;
+
+}
+
+.overlay p{
+
+font-size:1.2rem;
+
+line-height:1.8;
+
+}
+
+.intro{
+
+padding:80px 10%;
+
+max-width:1000px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+.intro h2{
+
+color:#0b5e3c;
+
+margin-bottom:20px;
+
+font-size:2.2rem;
+
+}
+
+.intro p{
+
+font-size:1.1rem;
+
+line-height:2;
+
+color:#555;
+
+}
+
+.impact{
+
+background:#f7f9fc;
+
+padding:80px 10%;
+
+text-align:center;
+
+}
+
+.impact-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+margin-top:50px;
+
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:12px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.card h3{
+
+font-size:2.5rem;
+
+color:#0b5e3c;
+
+}
+
+.gallery{
+
+padding:80px 8%;
+
+text-align:center;
+
+}
+
+.gallery-text{
+
+margin-bottom:40px;
+
+color:#666;
+
+}
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:20px;
+
+}
+
+.gallery-grid img{
+
+width:100%;
+
+height:260px;
+
+object-fit:cover;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+.gallery-grid img:hover{
+
+transform:scale(1.04);
+
+}
+
+.cta{
+
+padding:80px;
+
+text-align:center;
+
+background:#0b5e3c;
+
+color:white;
+
+}
+
+.donate-btn{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:15px 40px;
+
+background:#f4b400;
+
+color:black;
+
+font-weight:bold;
+
+border-radius:8px;
+
+text-decoration:none;
+
+}
+
+</style>
