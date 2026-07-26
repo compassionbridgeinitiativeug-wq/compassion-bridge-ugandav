@@ -1,165 +1,247 @@
-<section id="about" class="about">
+---
+import Header from "../components/Header.astro";
+---
 
-  <div class="about-image">
+<Header />
 
-    <img src="/girls.png" alt="Children supported by Compassion Bridge Initiative Uganda">
+<main>
 
-  </div>
+  <section class="about-hero">
+    <div class="container">
+      <h1>About Compassion Bridge Initiative Uganda</h1>
+      <p>
+        Restoring dignity, building futures through compassion, education,
+        empowerment and sustainable community development.
+      </p>
+    </div>
+  </section>
 
-  <div class="about-content">
 
-    <span class="section-title">
-      WHO WE ARE
-    </span>
+  <section class="about-section">
+    <div class="container">
 
-    <h2>
-      Building Hope Through Compassion
-    </h2>
+      <h2>Who We Are</h2>
 
-    <p>
+      <p>
+        Compassion Bridge Initiative Uganda is a community-based organisation
+        committed to improving the quality of life of vulnerable children,
+        families and communities in Uganda, with a special focus on
+        underserved communities in Kamuli District, Eastern Uganda.
+      </p>
 
-      Compassion Bridge Initiative Uganda is a community-based organisation
-      committed to restoring dignity and creating opportunities for vulnerable
-      children, women and families across Uganda.
+      <p>
+        We work to create opportunities for vulnerable people through
+        education support, health promotion, vocational skills development,
+        livelihood empowerment, child protection, psychosocial support and
+        sustainable community development initiatives.
+      </p>
 
-    </p>
+      <p>
+        We believe that every person deserves dignity, hope and the opportunity
+        to reach their full potential.
+      </p>
 
-    <p>
+    </div>
+  </section>
 
-      Through education, health promotion, sustainable livelihoods, child
-      protection and community empowerment, we work alongside communities to
-      build brighter futures and lasting change.
 
-    </p>
+  <section class="cards-section">
 
-    <a href="#programs" class="about-btn">
+    <div class="card">
+      <h2>Our Vision</h2>
+      <p>
+        A compassionate, empowered and resilient society where every person
+        lives with dignity, opportunity, hope and the ability to realise their
+        full potential.
+      </p>
+    </div>
 
-      Learn More About Our Work
 
-    </a>
+    <div class="card">
+      <h2>Our Mission</h2>
+      <p>
+        To improve the quality of life of vulnerable populations through
+        compassionate action, education, health promotion, livelihoods support,
+        vocational skills development, child protection, disability inclusion,
+        disaster response and sustainable community development.
+      </p>
+    </div>
 
-  </div>
+  </section>
 
-</section>
+
+  <section class="values-section">
+
+    <div class="container">
+
+      <h2>Our Core Values</h2>
+
+      <div class="values-grid">
+
+        <div>Compassion</div>
+        <div>Integrity</div>
+        <div>Accountability</div>
+        <div>Stewardship</div>
+        <div>Respect</div>
+        <div>Excellence</div>
+        <div>Collaboration</div>
+        <div>Service</div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="story-section">
+
+    <div class="container">
+
+      <h2>Our Story</h2>
+
+      <p>
+        Compassion Bridge Initiative Uganda was born from a deep commitment
+        to stand with vulnerable people and communities facing poverty,
+        limited opportunities and social challenges.
+      </p>
+
+      <p>
+        Through working closely with communities, we have seen the power of
+        compassion, education and empowerment in transforming lives. Our goal
+        is not only to provide immediate support, but also to help individuals
+        and families build resilience and create sustainable futures.
+      </p>
+
+      <p>
+        Together with community members, partners and supporters, we are
+        building bridges of hope and opportunity.
+      </p>
+
+    </div>
+
+  </section>
+
+
+</main>
+
 
 <style>
 
-.about{
+.about-hero {
+  background: linear-gradient(135deg, #0b4f8a, #1b7a6e);
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+}
 
-padding:110px 8%;
+.about-hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
 
-display:grid;
+.about-hero p {
+  font-size: 20px;
+  max-width: 750px;
+  margin: auto;
+}
 
-grid-template-columns:1fr 1fr;
 
-gap:70px;
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
 
-align-items:center;
 
-background:#F8F6F1;
+.about-section h2,
+.values-section h2,
+.story-section h2 {
+  color: #0b4f8a;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+
+.about-section p,
+.story-section p,
+.card p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+}
+
+
+.cards-section {
+  display: flex;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+
+.card {
+  flex: 1;
+  background: #f5f8fa;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+
+.values-section {
+  background: #fafafa;
+}
+
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+.values-grid div {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #0b4f8a;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+.story-section {
+  padding-bottom: 60px;
+}
+
+
+
+@media(max-width: 768px){
+
+.about-hero h1 {
+  font-size: 30px;
+}
+
+
+.cards-section {
+  flex-direction: column;
+}
+
+
+.values-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 }
 
-.about-image img{
 
-width:100%;
+@media(max-width: 450px){
 
-border-radius:22px;
-
-box-shadow:0 20px 45px rgba(0,0,0,.15);
-
-display:block;
-
-}
-
-.section-title{
-
-display:inline-block;
-
-color:#D4A017;
-
-font-weight:700;
-
-letter-spacing:2px;
-
-margin-bottom:18px;
-
-}
-
-.about h2{
-
-font-size:48px;
-
-line-height:1.2;
-
-color:#1E4D8C;
-
-margin-bottom:25px;
-
-}
-
-.about p{
-
-font-size:20px;
-
-line-height:1.9;
-
-color:#555;
-
-margin-bottom:22px;
-
-}
-
-.about-btn{
-
-display:inline-block;
-
-margin-top:15px;
-
-background:#2E7D32;
-
-color:white;
-
-padding:18px 34px;
-
-border-radius:8px;
-
-text-decoration:none;
-
-font-weight:700;
-
-transition:.3s;
-
-}
-
-.about-btn:hover{
-
-background:#236326;
-
-transform:translateY(-3px);
-
-}
-
-@media(max-width:900px){
-
-.about{
-
-grid-template-columns:1fr;
-
-padding:80px 20px;
-
-}
-
-.about h2{
-
-font-size:36px;
-
-}
-
-.about p{
-
-font-size:18px;
-
+.values-grid {
+  grid-template-columns: 1fr;
 }
 
 }
