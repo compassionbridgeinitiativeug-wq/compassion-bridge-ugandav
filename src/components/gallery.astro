@@ -1,0 +1,93 @@
+<section id="gallery" class="gallery">
+
+  <div class="heading">
+
+    <span class="small-title">
+      OUR GALLERY
+    </span>
+
+    <h2>
+      Moments of Hope
+    </h2>
+
+    <p>
+      Every photograph tells a story of compassion, hope and transformed lives.
+      These moments reflect the impact made possible through the generosity of
+      our partners, volunteers and supporters.
+    </p>
+
+  </div>
+
+  <div class="gallery-grid">
+
+    <img src="/education1.png" alt="Education Support">
+
+    <img src="/education2.jpg" alt="Education Support">
+
+    <img src="/education3.jpg" alt="Education Support">
+
+    <img src="/education4.jpg" alt="Education Support">
+
+    <img src="/education5.jpg" alt="Education Support">
+
+    <img src="/education6.jpg" alt="Education Support">
+
+    <img src="/education7.jpg" alt="Education Support">
+
+    <img src="/education8.jpg" alt="Education Support">
+
+  </div>
+
+</section>
+
+<style>
+
+.gallery{
+
+padding:120px 8%;
+
+background:#F8F6F1;
+
+scroll-margin-top:120px;
+
+}
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:24px;
+
+margin-top:60px;
+
+}
+
+.gallery-grid img{
+
+width:100%;
+
+height:300px;
+
+object-fit:cover;
+
+border-radius:18px;
+
+box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+transition:.35s;
+
+cursor:pointer;
+
+}
+
+.gallery-grid img:hover{
+
+transform:translateY(-8px) scale(1.03);
+
+box-shadow:0 20px 45px rgba(0,0,0,.18);
+
+}
+
+</style>

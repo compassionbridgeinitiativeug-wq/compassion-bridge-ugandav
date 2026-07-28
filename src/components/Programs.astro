@@ -3,7 +3,7 @@
   <div class="heading">
 
     <span class="small-title">
-      OUR AREAS OF IMPACT
+      OUR PROGRAMMES
     </span>
 
     <h2>
@@ -13,8 +13,8 @@
     <p>
       Compassion Bridge Initiative Uganda works hand in hand with communities
       to restore dignity, create opportunities and build resilient futures.
-      Our integrated programmes address the root causes of poverty while
-      empowering people to become self-reliant.
+      Through integrated programmes we address the root causes of poverty
+      while empowering individuals and families to become self-reliant.
     </p>
 
   </div>
@@ -22,92 +22,107 @@
   <div class="program-grid">
 
     <div class="card">
-      <div class="icon">🎓</div>
+
+      <div class="icon-circle">🎓</div>
+
       <h3>Education Support</h3>
 
       <p>
-        We support vulnerable children and young people to access quality
-        education through school fees assistance, scholastic materials,
-        mentorship and educational opportunities.
+        Supporting vulnerable children with school fees, scholastic materials,
+        mentorship and educational opportunities that keep them in school.
       </p>
+
     </div>
 
     <div class="card">
-      <div class="icon">❤️</div>
+
+      <div class="icon-circle">❤️</div>
+
       <h3>Health Promotion</h3>
 
       <p>
-        We promote healthier communities through health education,
-        sanitation awareness, disease prevention, nutrition and
-        community health outreach.
+        Promoting healthier communities through health education,
+        sanitation awareness, nutrition and disease prevention.
       </p>
+
     </div>
 
     <div class="card">
-      <div class="icon">🌾</div>
+
+      <div class="icon-circle">🌾</div>
+
       <h3>Sustainable Livelihoods</h3>
 
       <p>
-        We empower women, widows and vulnerable households through
-        agriculture, entrepreneurship, savings groups and
-        income-generating activities.
+        Empowering widows and vulnerable households through agriculture,
+        entrepreneurship, savings groups and income-generating activities.
       </p>
+
     </div>
 
     <div class="card">
-      <div class="icon">🛠</div>
+
+      <div class="icon-circle">🛠</div>
+
       <h3>Vocational Training</h3>
 
       <p>
-        Our vocational training centre equips young people and adults
-        with practical vocational and technical skills that promote
-        employment, entrepreneurship and self-reliance. Three cohorts
-        have already graduated successfully.
+        Equipping young people and adults with practical vocational skills
+        that promote employment, entrepreneurship and self-reliance.
       </p>
+
     </div>
 
     <div class="card">
-      <div class="icon">🛡</div>
+
+      <div class="icon-circle">🛡</div>
+
       <h3>Child Protection</h3>
 
       <p>
-        We create safe environments where children can grow with
-        dignity, protection, education and hope while safeguarding
-        their rights and wellbeing.
+        Creating safe environments where every child can grow with dignity,
+        protection, education and hope.
       </p>
+
     </div>
 
     <div class="card">
-      <div class="icon">🤝</div>
+
+      <div class="icon-circle">🤝</div>
+
       <h3>Community Empowerment</h3>
 
       <p>
-        We strengthen communities through leadership development,
-        volunteerism, partnerships and locally led solutions that
-        improve quality of life.
+        Strengthening communities through leadership development,
+        volunteerism, partnerships and locally-led solutions.
       </p>
+
     </div>
 
     <div class="card">
-      <div class="icon">🌳</div>
+
+      <div class="icon-circle">🌳</div>
+
       <h3>Environmental Protection</h3>
 
       <p>
-        We promote environmental conservation through tree planting,
-        climate awareness, sustainable farming and responsible
-        stewardship of natural resources.
+        Promoting environmental conservation through tree planting,
+        climate awareness and sustainable farming practices.
       </p>
+
     </div>
 
     <div class="card">
-      <div class="icon">🌍</div>
+
+      <div class="icon-circle">🌍</div>
+
       <h3>Sustainable Community Development</h3>
 
       <p>
-        We work alongside communities to build resilient, inclusive
-        and sustainable futures through long-term locally driven
-        development initiatives.
+        Building resilient, inclusive and sustainable communities through
+        long-term locally driven development initiatives.
       </p>
+
     </div>
 
   </div>
@@ -118,9 +133,11 @@
 
 .programs{
 
-padding:110px 8%;
+padding:120px 8%;
 
-background:white;
+background:#ffffff;
+
+scroll-margin-top:120px;
 
 }
 
@@ -138,15 +155,21 @@ margin-bottom:70px;
 
 .small-title{
 
-display:block;
+display:inline-block;
 
-color:#D4A017;
+padding:10px 22px;
+
+border-radius:30px;
+
+background:#EAF7ED;
+
+color:#2E7D32;
 
 font-weight:700;
 
 letter-spacing:2px;
 
-margin-bottom:15px;
+margin-bottom:20px;
 
 }
 
@@ -178,13 +201,13 @@ grid-template-columns:repeat(4,1fr);
 
 gap:30px;
 
-margin-top:60px;
-
 }
 
 .card{
 
 background:#F8F6F1;
+
+border-top:6px solid #2E7D32;
 
 padding:35px;
 
@@ -194,27 +217,45 @@ box-shadow:0 12px 30px rgba(0,0,0,.08);
 
 transition:.35s;
 
+display:flex;
+
+flex-direction:column;
+
 }
 
 .card:hover{
 
 transform:translateY(-10px);
 
-box-shadow:0 18px 40px rgba(0,0,0,.12);
+box-shadow:0 18px 40px rgba(0,0,0,.15);
 
 }
 
-.icon{
+.icon-circle{
 
-font-size:42px;
+width:70px;
 
-margin-bottom:20px;
+height:70px;
+
+border-radius:50%;
+
+background:#EAF7ED;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:34px;
+
+margin-bottom:22px;
 
 }
 
 .card h3{
 
-font-size:24px;
+font-size:23px;
 
 color:#1E4D8C;
 
@@ -224,15 +265,17 @@ margin-bottom:18px;
 
 .card p{
 
-color:#555;
+font-size:16px;
 
 line-height:1.8;
 
-font-size:17px;
+color:#555;
+
+flex-grow:1;
 
 }
 
-@media(max-width:1100px){
+@media(max-width:1200px){
 
 .program-grid{
 
@@ -246,7 +289,7 @@ grid-template-columns:repeat(2,1fr);
 
 .programs{
 
-padding:80px 20px;
+padding:90px 20px;
 
 }
 
