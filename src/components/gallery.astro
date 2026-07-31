@@ -11,30 +11,157 @@
     </h2>
 
     <p>
-      Every photograph tells a story of compassion, hope and transformed lives.
-      These moments reflect the impact made possible through the generosity of
-      our partners, volunteers and supporters.
+      Every photograph tells the story of hope, compassion and transformed
+      lives. These are the people and communities that inspire everything
+      we do.
     </p>
 
   </div>
 
   <div class="gallery-grid">
 
-    <img src="/education1.png" alt="Education Support">
+    <div class="gallery-card">
 
-    <img src="/education2.jpg" alt="Education Support">
+      <img src="/education1.jpg" alt="Education">
 
-    <img src="/education3.jpg" alt="Education Support">
+      <div class="overlay">
 
-    <img src="/education4.jpg" alt="Education Support">
+        <h3>Education Support</h3>
 
-    <img src="/education5.jpg" alt="Education Support">
+        <p>
+          Helping vulnerable children remain in school through education.
+        </p>
 
-    <img src="/education6.jpg" alt="Education Support">
+      </div>
 
-    <img src="/education7.jpg" alt="Education Support">
+    </div>
 
-    <img src="/education8.jpg" alt="Education Support">
+
+    <div class="gallery-card">
+
+      <img src="/education2.jpg" alt="Education">
+
+      <div class="overlay">
+
+        <h3>Changing Lives</h3>
+
+        <p>
+          Bringing hope to children and families through compassion.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="gallery-card">
+
+      <img src="/education3.jpg" alt="Community">
+
+      <div class="overlay">
+
+        <h3>Community Outreach</h3>
+
+        <p>
+          Working hand in hand with communities to restore dignity.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="gallery-card">
+
+      <img src="/education4.jpg" alt="Children">
+
+      <div class="overlay">
+
+        <h3>Building Futures</h3>
+
+        <p>
+          Every child deserves the opportunity to learn and succeed.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="gallery-card">
+
+      <img src="/education5.jpg" alt="Hope">
+
+      <div class="overlay">
+
+        <h3>Hope in Action</h3>
+
+        <p>
+          Small acts of kindness create lasting change.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="gallery-card">
+
+      <img src="/education6.jpg" alt="Communities">
+
+      <div class="overlay">
+
+        <h3>Empowered Communities</h3>
+
+        <p>
+          Supporting sustainable development through partnership.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="gallery-card">
+
+      <img src="/education7.jpg" alt="Children">
+
+      <div class="overlay">
+
+        <h3>Smiles of Hope</h3>
+
+        <p>
+          Every smile reminds us why our mission matters.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="gallery-card">
+
+      <img src="/education8.jpg" alt="Community">
+
+      <div class="overlay">
+
+        <h3>Restoring Dignity</h3>
+
+        <p>
+          Together we are building brighter futures for vulnerable families.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="gallery-button">
+
+    <a href="/gallery">
+      View More Photos
+    </a>
 
   </div>
 
@@ -43,50 +170,116 @@
 <style>
 
 .gallery{
-
 padding:120px 8%;
-
 background:#F8F6F1;
-
 scroll-margin-top:120px;
+}
 
+.heading{
+max-width:900px;
+margin:auto;
+text-align:center;
+margin-bottom:70px;
+}
+
+.small-title{
+display:block;
+color:#D4A017;
+font-weight:700;
+letter-spacing:2px;
+margin-bottom:15px;
+}
+
+.heading h2{
+font-size:48px;
+color:#1E4D8C;
+margin-bottom:20px;
+}
+
+.heading p{
+font-size:20px;
+line-height:1.8;
+color:#555;
 }
 
 .gallery-grid{
-
 display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-gap:24px;
-
-margin-top:60px;
-
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
 }
 
-.gallery-grid img{
-
-width:100%;
-
-height:300px;
-
-object-fit:cover;
-
+.gallery-card{
+position:relative;
+overflow:hidden;
 border-radius:18px;
-
-box-shadow:0 12px 30px rgba(0,0,0,.12);
-
-transition:.35s;
-
-cursor:pointer;
-
+box-shadow:0 15px 35px rgba(0,0,0,.12);
 }
 
-.gallery-grid img:hover{
+.gallery-card img{
+width:100%;
+height:320px;
+object-fit:cover;
+transition:.5s;
+display:block;
+}
 
-transform:translateY(-8px) scale(1.03);
+.gallery-card:hover img{
+transform:scale(1.08);
+}
 
-box-shadow:0 20px 45px rgba(0,0,0,.18);
+.overlay{
+position:absolute;
+left:0;
+right:0;
+bottom:0;
+padding:25px;
+background:linear-gradient(transparent,rgba(0,0,0,.88));
+color:white;
+}
+
+.overlay h3{
+margin-bottom:10px;
+font-size:24px;
+}
+
+.overlay p{
+line-height:1.6;
+font-size:15px;
+}
+
+.gallery-button{
+text-align:center;
+margin-top:60px;
+}
+
+.gallery-button a{
+display:inline-block;
+padding:16px 36px;
+background:#0B5E3C;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+transition:.3s;
+}
+
+.gallery-button a:hover{
+background:#083f29;
+}
+
+@media(max-width:768px){
+
+.gallery{
+padding:80px 20px;
+}
+
+.heading h2{
+font-size:36px;
+}
+
+.heading p{
+font-size:18px;
+}
 
 }
 
