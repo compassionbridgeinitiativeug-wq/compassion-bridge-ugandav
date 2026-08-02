@@ -1,0 +1,157 @@
+<section class="story-hero">
+
+  <div class="overlay"></div>
+
+  <div class="container">
+
+    <span class="story-tag">
+      OUR STORY
+    </span>
+
+    <h1>
+      One Half-Eaten Apple.<br />
+      A Lifetime of Compassion.
+    </h1>
+
+    <p>
+
+      Every organization has a beginning.
+      Ours began with a hungry little boy,
+      half an apple, and a single act of compassion
+      that changed countless lives.
+
+    </p>
+
+  </div>
+
+</section>
+
+<style>
+
+.story-hero{
+
+position:relative;
+
+height:85vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+background:
+
+linear-gradient(
+
+135deg,
+
+rgba(11,94,60,.92),
+
+rgba(30,136,229,.85)
+
+),
+
+url("/pit.png") center/cover;
+
+color:white;
+
+overflow:hidden;
+
+}
+
+.overlay{
+
+position:absolute;
+
+inset:0;
+
+background:rgba(0,0,0,.18);
+
+}
+
+.container{
+
+position:relative;
+
+z-index:2;
+
+max-width:900px;
+
+padding:0 20px;
+
+}
+
+.story-tag{
+
+display:inline-block;
+
+padding:12px 28px;
+
+background:rgba(255,255,255,.18);
+
+border-radius:40px;
+
+font-weight:bold;
+
+letter-spacing:2px;
+
+margin-bottom:25px;
+
+backdrop-filter:blur(10px);
+
+}
+
+.story-hero h1{
+
+font-size:72px;
+
+line-height:1.1;
+
+margin-bottom:30px;
+
+font-weight:800;
+
+}
+
+.story-hero p{
+
+font-size:24px;
+
+line-height:1.9;
+
+max-width:760px;
+
+margin:auto;
+
+opacity:.95;
+
+}
+
+@media(max-width:900px){
+
+.story-hero{
+
+height:auto;
+
+padding:170px 20px 100px;
+
+}
+
+.story-hero h1{
+
+font-size:46px;
+
+}
+
+.story-hero p{
+
+font-size:19px;
+
+}
+
+}
+
+</style>
