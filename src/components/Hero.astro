@@ -14,23 +14,39 @@ import HeroButtons from "./HeroButtons.astro";
 
   <div class="container hero-content">
 
+    <img
+      src="/logocbiu.png"
+      alt="CBIU Logo"
+      class="hero-logo"
+    />
+
     <span class="welcome">
       COMPASSION BRIDGE INITIATIVE UGANDA
     </span>
 
     <h1>
-      Restoring Dignity.<br />
+
+      Restoring Dignity.<br>
+
       Building Futures.
+
     </h1>
 
     <p>
-      We empower vulnerable children, women and communities through
+
+      Empowering vulnerable children, women and communities through
       education, health promotion, sustainable livelihoods,
-      child protection and compassionate community development
-      across Uganda.
+      disability inclusion and compassionate community development.
+
     </p>
 
     <HeroButtons />
+
+  </div>
+
+  <div class="scroll-indicator">
+
+      <span></span>
 
   </div>
 
@@ -60,9 +76,7 @@ margin-top:95px;
 
 position:absolute;
 
-top:0;
-
-left:0;
+inset:0;
 
 width:100%;
 
@@ -70,7 +84,7 @@ height:100%;
 
 object-fit:cover;
 
-animation:slowZoom 18s ease-in-out infinite alternate;
+animation:slowZoom 20s ease-in-out infinite alternate;
 
 }
 
@@ -80,12 +94,16 @@ position:absolute;
 
 inset:0;
 
-background:
-linear-gradient(
+background:linear-gradient(
+
 90deg,
-rgba(9,33,62,.88),
-rgba(9,33,62,.72),
-rgba(9,33,62,.40)
+
+rgba(8,25,52,.82),
+
+rgba(8,25,52,.58),
+
+rgba(8,25,52,.28)
+
 );
 
 }
@@ -100,7 +118,17 @@ color:white;
 
 max-width:760px;
 
-animation:fadeUp 1.3s ease;
+animation:fadeUp 1.2s ease;
+
+}
+
+.hero-logo{
+
+width:110px;
+
+margin-bottom:28px;
+
+filter:drop-shadow(0 8px 18px rgba(0,0,0,.35));
 
 }
 
@@ -108,13 +136,13 @@ animation:fadeUp 1.3s ease;
 
 display:inline-block;
 
-padding:12px 24px;
+padding:12px 26px;
 
 border-radius:40px;
 
-background:rgba(212,160,23,.18);
+background:rgba(244,180,0,.18);
 
-border:1px solid rgba(212,160,23,.65);
+border:1px solid rgba(244,180,0,.55);
 
 font-size:14px;
 
@@ -124,35 +152,109 @@ letter-spacing:2px;
 
 margin-bottom:28px;
 
-backdrop-filter:blur(6px);
+backdrop-filter:blur(8px);
 
 }
 
 .hero h1{
 
-font-size:78px;
+font-size:80px;
 
-line-height:1.05;
+line-height:1.03;
 
 font-weight:800;
 
-margin-bottom:28px;
+margin-bottom:30px;
 
-text-shadow:0 5px 18px rgba(0,0,0,.35);
+text-shadow:0 8px 22px rgba(0,0,0,.45);
 
 }
 
 .hero p{
 
-font-size:23px;
+font-size:22px;
 
 line-height:1.9;
 
-max-width:650px;
+max-width:680px;
 
-margin-bottom:40px;
+margin-bottom:45px;
 
-text-shadow:0 3px 10px rgba(0,0,0,.25);
+text-shadow:0 4px 15px rgba(0,0,0,.3);
+
+}
+
+.scroll-indicator{
+
+position:absolute;
+
+bottom:35px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+}
+
+.scroll-indicator span{
+
+display:block;
+
+width:24px;
+
+height:40px;
+
+border:2px solid white;
+
+border-radius:20px;
+
+position:relative;
+
+opacity:.8;
+
+}
+
+.scroll-indicator span::after{
+
+content:"";
+
+position:absolute;
+
+top:8px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:4px;
+
+height:8px;
+
+background:white;
+
+border-radius:4px;
+
+animation:scroll 1.6s infinite;
+
+}
+
+@keyframes scroll{
+
+0%{
+
+opacity:1;
+
+transform:translate(-50%,0);
+
+}
+
+100%{
+
+opacity:0;
+
+transform:translate(-50%,16px);
+
+}
 
 }
 
@@ -198,17 +300,19 @@ transform:scale(1.08);
 
 height:auto;
 
-padding:140px 0 90px;
+padding:150px 20px 100px;
 
 text-align:center;
 
 }
 
-.hero-content{
+.hero-logo{
 
-max-width:100%;
+width:85px;
 
-padding:0 20px;
+margin:auto;
+
+margin-bottom:24px;
 
 }
 
@@ -225,6 +329,12 @@ font-size:18px;
 margin:auto;
 
 margin-bottom:35px;
+
+}
+
+.scroll-indicator{
+
+display:none;
 
 }
 

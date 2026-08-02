@@ -1,48 +1,49 @@
 <section class="cta">
 
-    <div class="cta-content">
+  <div class="cta-content">
 
-        <span class="small-title">
+    <span class="small-title">
+      JOIN OUR MISSION
+    </span>
 
-            JOIN US
+    <h2>
+      Together We Can Restore Dignity and Build Brighter Futures
+    </h2>
 
-        </span>
+    <p>
 
-        <h2>
+      Every child deserves an education.
 
-            Together We Can Restore Dignity and Build Brighter Futures
+      Every widow deserves an opportunity.
 
-        </h2>
+      Every young person deserves hope.
 
-        <p>
+      Together, we can empower communities through education, livelihoods,
+      health promotion, disability inclusion and compassionate action.
 
-            Every child deserves the opportunity to learn.
+    </p>
 
-            Every woman deserves dignity.
+    <div class="buttons">
 
-            Every family deserves hope.
+      <a href="/support-our-work" class="btn-primary">
+        ❤️ Support Our Work
+      </a>
 
-            Your partnership can help transform lives across Uganda.
+      <a href="/support-our-work" class="btn-secondary">
+        🤝 Become a Partner
+      </a>
 
-        </p>
+      <a href="/#contact" class="btn-outline">
+        🙋 Volunteer
+      </a>
 
-        <div class="buttons">
-
-            <a href="#contact" class="btn-primary">
-
-                Partner With Us
-
-            </a>
-
-            <a href="#contact" class="btn-secondary">
-
-                Donate Today
-
-            </a>
-
-        </div>
+      <a href="/resources" class="btn-outline">
+        📚 Resources
+      </a>
 
     </div>
+
+  </div>
 
 </section>
 
@@ -62,7 +63,7 @@ color:white;
 
 .cta-content{
 
-max-width:900px;
+max-width:950px;
 
 margin:auto;
 
@@ -74,11 +75,15 @@ display:block;
 
 font-weight:bold;
 
-letter-spacing:2px;
+letter-spacing:3px;
 
 color:#FFD54F;
 
 margin-bottom:20px;
+
+font-size:15px;
+
+text-transform:uppercase;
 
 }
 
@@ -100,27 +105,27 @@ line-height:1.9;
 
 opacity:.95;
 
-margin-bottom:45px;
+margin-bottom:50px;
 
 }
 
 .buttons{
 
-display:flex;
+display:grid;
 
-justify-content:center;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 
-gap:25px;
+gap:20px;
 
-flex-wrap:wrap;
+margin-top:20px;
 
 }
 
 .buttons a{
 
-padding:18px 34px;
+padding:18px 25px;
 
-border-radius:8px;
+border-radius:10px;
 
 font-size:18px;
 
@@ -128,7 +133,9 @@ font-weight:bold;
 
 text-decoration:none;
 
-transition:.35s;
+transition:.3s;
+
+text-align:center;
 
 }
 
@@ -142,7 +149,7 @@ color:#1E4D8C;
 
 .btn-primary:hover{
 
-transform:translateY(-4px);
+transform:translateY(-5px);
 
 }
 
@@ -156,7 +163,25 @@ color:#1E4D8C;
 
 .btn-secondary:hover{
 
-transform:translateY(-4px);
+transform:translateY(-5px);
+
+}
+
+.btn-outline{
+
+background:transparent;
+
+border:2px solid white;
+
+color:white;
+
+}
+
+.btn-outline:hover{
+
+background:white;
+
+color:#1E4D8C;
 
 }
 
@@ -182,13 +207,7 @@ font-size:18px;
 
 .buttons{
 
-flex-direction:column;
-
-}
-
-.buttons a{
-
-width:100%;
+grid-template-columns:1fr;
 
 }
 
